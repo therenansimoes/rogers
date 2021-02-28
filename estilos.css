@@ -69,11 +69,6 @@ div.loading p {
   color: black;
 }
 nav {
-  width: 100%;
-  max-width: 1200px;
-  min-height: 158px;
-  margin: 0 auto;
-  display: block;
   /* novo menu */
   /*      fim menu   */
 }
