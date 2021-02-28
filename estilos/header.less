@@ -1,10 +1,423 @@
-div{
-    margin:10px;
+
+nav.submenu {
+    background: rgba(255, 255, 255, 100);
+    position: absolute;
+    margin: auto;
+    z-index: 10;
+    display: none;
+    border: 1px solid #dadada;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0.01s;
+    text-align: left;
+    height: initial;
+    width: max-content;
+    overflow: visible;
+    top: 21px;
+    left: -10px;
 }
-a {
-    color:blue;
-    background-color:red;
+
+nav.submenu.mulheres {}
+
+nav.submenu.criancas {}
+
+nav.submenu.acessorios {
+    margin: 42px 0 0 -585px;
 }
-.renan a {
-    color:blue
+
+nav.submenu.ofertas {
+    margin: 42px 0 0 -705px;
+}
+
+nav.submenu ul {
+    padding: 0;
+    margin: 10px;
+    text-align: left;
+    height: 100%;
+    float: left;
+    display: inline-block;
+    overflow: visible;
+}
+
+nav.submenu ul:last-child {}
+
+nav.submenu.homens ul li:first-child,
+nav.submenu.mulheres ul li:first-child,
+nav.submenu.criancas ul li:first-child {
+    text-transform: uppercase;
+    font-size: 8pt;
+    font-family: 'proxima_nova_ltbold';
+    letter-spacing: 3pt;
+    display: block;
+}
+
+nav.submenu ul li {
+    color: #000;
+    text-transform: capitalize;
+    display: block;
+    line-height: 29px;
+    font-family: 'ProximaNova-Regular';
+    text-align: left;
+    margin: 0 21px;
+    padding: 0px 2px;
+    position: relative;
+    width: 100%;
+    letter-spacing: 1pt;
+}
+
+.submenu ul:last-child li:first-child,
+.submenu ul:last-child li:last-child {
+    text-transform: uppercase;
+    font-size: 8pt;
+    font-family: 'proxima_nova_ltbold';
+    letter-spacing: 3pt;
+    display: block;
+}
+
+.submenu ul:last-child li:first-child a {
+    color: #ce2512 !important;
+}
+
+.submenu ul:last-child li:last-child a {
+    font-weight: bold;
+    color: #ce2512 !important;
+}
+
+@media screen and (min-width:767px) {
+    .over-homens:hover nav.submenu.homens,
+    .over-mulheres:hover nav.submenu.mulheres,
+    .over-criancas:hover nav.submenu.criancas,
+    .over-acessorios:hover nav.submenu.acessorios,
+    .over-ofertas:hover nav.submenu.ofertas,
+    .over-marcas:hover nav.submenu.marcas {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+        width: max-content;
+    }
+    .navbar-inverse {
+        display: none;
+    }
+    .Ofertas {
+        position: absolute;
+        left: 38em;
+        top: 22px;
+    }
+    .ver-todos-link {
+        display: flex;
+        font-size: 16px;
+        color: white;
+        position: relative;
+        bottom: 30px;
+        border-radius: 22px;
+        width: 182px;
+        padding: 11px 0px 11px 10px;
+        left: 44%;
+        background: linear-gradient(to right, rgb(224 107 81), rgb(248 69 0));
+    }
+    .ver-todos-link:hover {
+        background: linear-gradient(to right, rgb(248 69 0), rgb(224 107 81));
+    }
+    .See-More-Link :hover {
+        color: white;
+        text-decoration: none;
+    }
+    .See-More-Link {
+        position: relative;
+        left: 27%;
+        color: white !important;
+        text-decoration: none !important;
+    }
+    body.home .navigator-div h3.equipamentos {
+        position: absolute;
+        margin: 0;
+        left: 114px;
+        padding: 0;
+        top: 14px;
+    }
+    body.produto-new .navigator-div h3.equipamentos {
+        position: absolute;
+        margin: 0;
+        left: 114px;
+        padding: 0;
+        top: 24px;
+    }
+    body.home .navigator-div h3.calcados {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 14px;
+    }
+    body.home .navigator-div .Ofertas {
+        position: absolute;
+        left: 38em;
+        top: 20px;
+    }
+    .navigator-div .menu-departamento {
+        display: flex;
+    }
+    .navigator-div .menu-item-texto,
+    .navigator-div .brandFilter h3,
+    .navigator-div .Ocasiao h3,
+    .navigator-div .Genero h3 {
+        color: #bf1111;
+        padding: 3px;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_ltbold';
+        font-size: 13px;
+    }
+    .navigator-div .menu-item-texto:hover,
+    .navigator-div .brandFilter h3:hover,
+    .navigator-div .Ocasiao h3:hover,
+    .navigator-div .Genero h3:hover {
+        text-decoration: underline;
+    }
+    .navigator-div .menu-item-texto:hover {
+        color: #bf1111;
+    }
+    .navigator-div ul.calcados {
+        line-height: 2;
+        top: 43px;
+        right: 302px;
+        position: absolute;
+        padding: 0;
+        padding-bottom: 21px;
+    }
+    .navigator-div h3.calcados {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 24px;
+    }
+    .navigator-div h3.equipamentos {
+        position: absolute;
+        margin: 0;
+        left: 114px;
+        padding: 0;
+        top: 24px;
+    }
+    .navigator-div ul.equipamentos {
+        position: relative;
+        line-height: 2;
+        left: 122px;
+        top: 43px;
+        width: 346px;
+        padding-bottom: 25px;
+        height: 212px;
+    }
+    /* ul.roupas-e-acessorios {
+        position: relative;
+        top: 53px;
+        line-height: 2;
+        right: 372px;
+        width: 337px;
+        height: 471px;
+    } */
+    .navigator-div .roupas-e-acessorios a {
+        display: flex;
+        width: max-content;
+    }
+    .navigator-div h3.roupas-e-acessorios {
+        position: absolute;
+        margin: 0;
+        left: 259px;
+        padding: 0;
+        top: 21px;
+    }
+    .navigator-div ul.calcados li a,
+    .navigator-div ul.equipamentos li a,
+    .navigator-div ul.roupas-e-acessorios li a,
+    .navigator-div .Ocasiao ul li a,
+    .navigator-div .brandFilter ul li a,
+    .navigator-div .Genero ul li a {
+        color: black;
+        font-family: 'proxima_nova_ltregular';
+        text-transform: capitalize !important;
+        font-size: 14px;
+    }
+    .navigator-div .Tamanho {
+        display: none;
+    }
+    .navigator-div .brandFilter {
+        position: absolute;
+        margin: 0;
+        left: 448px;
+        padding: 0;
+        top: 1px;
+    }
+    .navigator-div .brandFilter ul {
+        position: absolute;
+        left: -11px;
+        top: 46px;
+        height: 282px;
+        width: 541px;
+    }
+    .navigator-div .brandFilter ul li {
+        width: 96px;
+        line-height: 2;
+    }
+    .navigator-div .Genero ul {
+        position: absolute;
+        top: 46px;
+        left: -14px;
+    }
+    .navigator-div .Genero {
+        margin-top: 8px;
+        position: relative;
+        right: 575px;
+        display: none
+    }
+    .navigator-div .Ocasiao {
+        position: relative;
+        right: 513px;
+        margin-top: 8px;
+        display: none;
+    }
+    .navigator-div .Ofertas a {
+        color: #bf1111;
+        padding: 3px;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_ltbold';
+        font-size: 13px;
+    }
+    .navigator-div .Ofertas a:hover {
+        color: #bf1111;
+    }
+    .navigator-div .Ocasiao ul {
+        left: -8px;
+    }
+    .navigator-div .visible {
+        visibility: visible;
+        opacity: 1;
+    }
+    .navigator-div .hiddens {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .main-search {
+        width: 25%;
+        height: 30px;
+        background: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        left: 140px;
+        margin: 22px 10px 20px 30px;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        text-align: left;
+    }
+    .navigator-div .roupas-e-acessorios li:nth-child(-n+7) {
+        display: flex;
+        position: relative;
+        right: 0em;
+        width: 135px;
+        bottom: 0;
+        /* top: 12px; */
+    }
+    .navigator-div .roupas-e-acessorios li:nth-child(8),
+    .navigator-div .roupas-e-acessorios li:nth-child(9),
+    .navigator-div .roupas-e-acessorios li:nth-child(10),
+    .navigator-div .roupas-e-acessorios li:nth-child(11),
+    .navigator-div .roupas-e-acessorios li:nth-child(12),
+    .navigator-div .roupas-e-acessorios li:nth-child(13),
+    .navigator-div .roupas-e-acessorios li:nth-child(14) {
+        display: flex;
+        position: relative;
+        left: 15.5em;
+        width: 153px;
+        bottom: 15.7em;
+    }
+    .navigator-div .roupas-e-acessorios li:nth-child(15),
+    .navigator-div .roupas-e-acessorios li:nth-child(16),
+    .navigator-div .roupas-e-acessorios li:nth-child(17),
+    .navigator-div .roupas-e-acessorios li:nth-child(18),
+    .navigator-div .roupas-e-acessorios li:nth-child(19),
+    .navigator-div .roupas-e-acessorios li:nth-child(20),
+    .navigator-div .roupas-e-acessorios li:nth-child(21) {
+        display: flex;
+        position: relative;
+        left: 33em;
+        width: 91px;
+        bottom: 32.2em;
+    }
+    .navigator-div ul.equipamentos li:nth-child(-n+6) {
+        width: 120px;
+    }
+    .navigator-div ul.equipamentos li:nth-child(7),
+    .navigator-div ul.equipamentos li:nth-child(8),
+    .navigator-div ul.equipamentos li:nth-child(9),
+    .navigator-div ul.equipamentos li:nth-child(10),
+    .navigator-div ul.equipamentos li:nth-child(11),
+    .navigator-div ul.equipamentos li:nth-child(12) {
+        display: flex;
+        position: relative;
+        left: 13em;
+        width: 183px;
+        bottom: 14.5em;
+    }
+    .brandFilter ul li {
+        text-transform: lowercase;
+    }
+    .brandFilter ul li a {
+        text-transform: capitalize;
+    }
+    .navigator-div ul.roupas-e-acessorios {
+        position: absolute;
+        top: 44px;
+        line-height: 2;
+        left: 251px;
+        width: 567px;
+        height: 256px;
+    }
+    .navigator-div .brandFilter ul li:nth-child(8),
+    .navigator-div .brandFilter ul li:nth-child(9),
+    .navigator-div .brandFilter ul li:nth-child(10),
+    .navigator-div .brandFilter ul li:nth-child(11),
+    .navigator-div .brandFilter ul li:nth-child(12),
+    .navigator-div .brandFilter ul li:nth-child(13),
+    .navigator-div .brandFilter ul li:nth-child(14) {
+        display: flex;
+        position: relative;
+        left: 15.5em;
+        width: 65px;
+        bottom: 16.9em;
+    }
+    .navigator-div .brandFilter ul li:nth-child(15),
+    .navigator-div .brandFilter ul li:nth-child(16),
+    .navigator-div .brandFilter ul li:nth-child(17),
+    .navigator-div .brandFilter ul li:nth-child(18),
+    .navigator-div .brandFilter ul li:nth-child(19),
+    .navigator-div .brandFilter ul li:nth-child(20),
+    .navigator-div .brandFilter ul li:nth-child(21) {
+        display: flex;
+        position: relative;
+        left: 32em;
+        width: 66px;
+        bottom: 33.6em;
+    }
+    .wrap-menu {
+        display: none;
+    }
+    .navigator-div {
+        display: flex;
+        width: 65%;
+    }
+    nav.submenu {
+        background: rgba(255, 255, 255, 100);
+        position: absolute;
+        margin: auto;
+        z-index: 10;
+        border: 1px solid #dadada;
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        transition: all 0.4s ease-in-out 0.01s;
+        text-align: left;
+        height: initial;
+        width: max-content;
+        overflow: visible;
+        top: 21px;
+        left: -10px;
+    }
 }
