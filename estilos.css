@@ -113,6 +113,13 @@ nav .categories a:hover {
   text-decoration: none !important;
   color: #bf1111;
 }
+nav header {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 158px;
+  margin: 0 auto;
+  display: block;
+}
 nav header > .container > a:first-child {
   display: inline-block;
   width: 150px;
