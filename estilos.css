@@ -72,7 +72,79 @@ nav {
   /* novo menu */
   /*      fim menu   */
 }
-nav nav.submenu {
+nav .topbar {
+  width: 100%;
+  background: #000000;
+  min-height: 20px;
+  text-align: right;
+  height: 27px;
+  line-height: 19px;
+}
+nav .topbar .container {
+  max-width: 1200px;
+  display: block;
+  text-align: right;
+  margin: 0 auto;
+}
+nav .topbar .container ul {
+  text-align: right;
+  display: inline-block;
+}
+nav .topbar a {
+  text-decoration: none;
+  color: #fff;
+}
+nav .topbar a:hover {
+  color: red;
+}
+nav .topbar .container ul li {
+  display: inline-block;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding-right: 25px;
+  border-right: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  height: 16px;
+  vertical-align: middle;
+}
+nav .topbar .container ul li:last-child {
+  border: 0;
+}
+nav .topbar .container ul li .portal-minicart-ref {
+  width: 100%;
+  height: auto;
+  background: yellow;
+  float: left;
+}
+nav .categories a:hover {
+  text-decoration: none !important;
+  color: #bf1111;
+}
+nav header {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 158px;
+  margin: 0 auto;
+  display: block;
+}
+nav header > .container > a:first-child {
+  display: inline-block;
+  width: 150px;
+  position: relative;
+  right: 45px;
+  margin: 2px 0px -15px 0px;
+}
+nav header .logo {
+  background: url('//rogerstenis.vteximg.com.br/arquivos/icones.png') no-repeat 0 0;
+  background-size: 150px 600px;
+  height: 53px;
+  margin: 12px 0;
+  max-width: 128px;
+}
+nav submenu {
   background: #ffffff;
   position: absolute;
   margin: auto;
@@ -89,13 +161,13 @@ nav nav.submenu {
   top: 21px;
   left: -10px;
 }
-nav nav.submenu.acessorios {
+nav submenu.acessorios {
   margin: 42px 0 0 -585px;
 }
-nav nav.submenu.ofertas {
+nav submenu.ofertas {
   margin: 42px 0 0 -705px;
 }
-nav nav.submenu ul {
+nav submenu ul {
   padding: 0;
   margin: 10px;
   text-align: left;
@@ -104,16 +176,16 @@ nav nav.submenu ul {
   display: inline-block;
   overflow: visible;
 }
-nav nav.submenu.homens ul li:first-child,
-nav nav.submenu.mulheres ul li:first-child,
-nav nav.submenu.criancas ul li:first-child {
+nav submenu.homens ul li:first-child,
+nav submenu.mulheres ul li:first-child,
+nav submenu.criancas ul li:first-child {
   text-transform: uppercase;
   font-size: 8pt;
   font-family: 'proxima_nova_ltbold';
   letter-spacing: 3pt;
   display: block;
 }
-nav nav.submenu ul li {
+nav submenu ul li {
   color: #000;
   text-transform: capitalize;
   display: block;
@@ -152,12 +224,12 @@ nav .submenu ul:last-child li:last-child a {
         height: 471px;
     } */
   }
-  nav .over-homens:hover nav.submenu.homens,
-  nav .over-mulheres:hover nav.submenu.mulheres,
-  nav .over-criancas:hover nav.submenu.criancas,
-  nav .over-acessorios:hover nav.submenu.acessorios,
-  nav .over-ofertas:hover nav.submenu.ofertas,
-  nav .over-marcas:hover nav.submenu.marcas {
+  nav .over-homens:hover submenu.homens,
+  nav .over-mulheres:hover submenu.mulheres,
+  nav .over-criancas:hover submenu.criancas,
+  nav .over-acessorios:hover submenu.acessorios,
+  nav .over-ofertas:hover submenu.ofertas,
+  nav .over-marcas:hover submenu.marcas {
     display: inline-block;
     visibility: visible;
     opacity: 1;
@@ -463,7 +535,7 @@ nav .submenu ul:last-child li:last-child a {
     display: flex;
     width: 65%;
   }
-  nav nav.submenu {
+  nav submenu {
     background: #ffffff;
     position: absolute;
     margin: auto;
@@ -531,7 +603,7 @@ nav .submenu ul:last-child li:last-child a {
     display: flex;
     overflow: scroll;
   }
-  nav nav.submenu.homens.mobile {
+  nav submenu.homens.mobile {
     width: 81%;
     height: 100%;
     position: fixed;
@@ -752,19 +824,19 @@ nav .menu-item-action a {
 nav .navbar-toggle {
   border: none !important;
 }
-nav nav.submenu ul:nth-last-child(2) {
+nav submenu ul:nth-last-child(2) {
   display: none !important;
 }
-nav nav.submenu.homens ul:nth-last-child(3),
-nav nav.submenu.mulheres ul:nth-last-child(3),
-nav nav.submenu.criancas ul:nth-last-child(3),
-nav nav.submenu.homens ul:nth-last-child(4),
-nav nav.submenu.mulheres ul:nth-last-child(4),
-nav nav.submenu.criancas ul:nth-last-child(4),
-nav nav.submenu.homens ul:nth-last-child(5),
-nav nav.submenu.mulheres ul:nth-last-child(5),
-nav nav.submenu.criancas ul:nth-last-child(5),
-nav nav.submenu.homens ul:nth-last-child(9) {
+nav submenu.homens ul:nth-last-child(3),
+nav submenu.mulheres ul:nth-last-child(3),
+nav submenu.criancas ul:nth-last-child(3),
+nav submenu.homens ul:nth-last-child(4),
+nav submenu.mulheres ul:nth-last-child(4),
+nav submenu.criancas ul:nth-last-child(4),
+nav submenu.homens ul:nth-last-child(5),
+nav submenu.mulheres ul:nth-last-child(5),
+nav submenu.criancas ul:nth-last-child(5),
+nav submenu.homens ul:nth-last-child(9) {
   display: none !important;
 }
 body.produto .title {
