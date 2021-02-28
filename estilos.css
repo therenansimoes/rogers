@@ -68,14 +68,14 @@ div.loading p {
 .renan2 {
   color: black;
 }
-header div {
+div {
   margin: 10px;
 }
-header a {
+a {
   color: blue;
   background-color: red;
 }
-header .renan a {
+.renan a {
   color: blue;
 }
 body.produto .title {
