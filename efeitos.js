@@ -5,6 +5,7 @@ $(document).ready(function() {
         $('li.skuList.item-dimension-Cor span').find('input:eq(1)').first().click();
     }
 
+    
     if ($('.content_banners .sub_banners .box-banner').length > 1) {
         $('.content_banners .sub_banners').cycle({
             prev: '.content_banners a.anterior',
