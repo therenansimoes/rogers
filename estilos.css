@@ -71,6 +71,9 @@ header div {
 header a {
   color: blue;
 }
+header .renan a {
+  color: blue;
+}
 body.produto .title {
   color: #333;
 }
