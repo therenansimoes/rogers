@@ -1,4 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+body {
+    margin: 0;
+    font-family: 'ProximaNova-Regular';
+    min-width: 100%;
+}
 
+ul {
+    padding: 0;
+    margin: 0
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    font-weight: normal
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+    color: inherit;
+}
+
+
+/* Loading  
+-----------------------------*/
+
+div#ajaxBusy,
+div.loading {
+    height: 1px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 999999;
+    display: none;
+}
+
+div#ajaxBusy p,
+div.loading p {
+    background: url(//rogerstenis.vteximg.com.br/arquivos/ajax-loader2.gif) no-repeat 115px center #FFF6BF;
+    border: 2px #FFD324 solid;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 8px 30px 8px 0;
+    width: 120px;
+}
+
+
+/* Principal
+-----------------------------*/
+
+.container {
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
 
 .topbar {
     width: 100%;
