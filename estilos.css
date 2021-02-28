@@ -73,6 +73,7 @@ header div {
 }
 header a {
   color: blue;
+  background-color: red;
 }
 header .renan a {
   color: blue;
