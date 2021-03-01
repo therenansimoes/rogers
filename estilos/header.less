@@ -6,55 +6,55 @@
     text-align: right;
     height: 27px;
     line-height: 19px;
-}
 
-.topbar .container {
+
+.container {
     max-width: 1200px;
     display: block;
     text-align: right;
     margin: 0 auto;
+    ul {
+        text-align: right;
+        display: inline-block;
+        li {
+            display: inline-block;
+            color: #fff;
+            margin-right: 20px;
+            font-size: 11px;
+            text-transform: uppercase;
+            padding-right: 25px;
+            border-right: 1px solid #ccc;
+            margin-top: 5px;
+            margin-bottom: 6px;
+            height: 16px;
+            vertical-align: middle;
+            .portal-minicart-ref {
+                width: 100%;
+                height: auto;
+                background: yellow;
+                float: left;
+            }
+        }
+        li:last-child {
+            border: 0
+        }
+        
+    }
 }
 
-.topbar .container ul {
-    text-align: right;
-    display: inline-block;
-}
 
-.topbar a {
+
+a {
     text-decoration: none;
     color: #fff;
 }
 
-.topbar a:hover {
+a:hover {
     color: red;
 }
 
-
-.topbar .container ul li {
-    display: inline-block;
-    color: #fff;
-    margin-right: 20px;
-    font-size: 11px;
-    text-transform: uppercase;
-    padding-right: 25px;
-    border-right: 1px solid #ccc;
-    margin-top: 5px;
-    margin-bottom: 6px;
-    height: 16px;
-    vertical-align: middle;
+   
 }
-
-.topbar .container ul li:last-child {
-    border: 0
-}
-
-.topbar .container ul li .portal-minicart-ref {
-    width: 100%;
-    height: auto;
-    background: yellow;
-    float: left;
-}
-
 .categories a:hover {
     text-decoration: none !important;
     color: #bf1111;
